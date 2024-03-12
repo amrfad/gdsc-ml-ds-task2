@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bike Predictor</title>
+    </head>
+    <body>
+        <center>
+            <h1>Bike Rented Predictor</h1>
+            <form method="post" action="{{url_for('prediction')}}">
+                Date: <input type="date"  name="date"><br><br>
+                Hour: <input type="number" name="hour" placeholder="00 - 23"><br><br>
+                Temperature (°C): <input type="number" step="0.01" name="temp" placeholder="Mean: 13.12"><br><br>
+                Humidity (%): <input type="number" step="0.01" name="humidity" placeholder="Mean: 58.16"><br><br>
+                Wind Speed (m/s): <input type="number" step="0.01" name="wind_speed" placeholder="Mean: 1.79"><br><br>
+                Visibility (10m): <input type="number" step="0.01" name="visibility" placeholder="Mean: 1420.0"><br><br>
+                Dew Point Temperature (°C): <input type="number" step="0.01" name="dew_temp" placeholder="Mean: 4.29"><br><br>
+                Solar Radiation (MJ/m2): <input type="number" step="0.01" name="solar_rad" placeholder="Mean: 0.59"><br><br>
+                Rainfall (mm): <input type="number" step="0.01" name="rainfall" placeholder="Mean: 0.15"><br><br>
+                Snowfall (cm): <input type="number" step="0.01" name="snowfall" placeholder="Mean: 0.08"><br><br>
+                Functioning Day: <input type="radio" step="0.01" name="func" value="Yes" checked>Yes 
+                                 <input type="radio" name="func" value="No">No<br><br><br>
+                <input type="submit" value="PREDICT">
+            </form>
+        </center>
+    </body>
+</html>
